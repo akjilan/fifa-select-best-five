@@ -62,7 +62,7 @@ body {
 #card-section {
   padding: 30px 40px;
   background-color: rgba(27, 10, 10, 0.892);
-  z-index: 99 ;
+  z-index: 99;
 }
 .card-section-inner-1 {
   display: grid;
@@ -75,9 +75,8 @@ body {
   background-color: rgb(10, 10, 12);
   display: flex;
   flex-direction: column;
-  align-items:center;
-  justify-content: center
-  
+  align-items: center;
+  justify-content: center;
 }
 .card-section-inner-2 {
   display: grid;
@@ -106,13 +105,37 @@ body {
 /* player list section  */
 #playerList {
   height: fit-content;
-
 }
-#playerList > li{
+#playerList > li {
   color: white;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 18px;
   padding: 3px 0;
+}
+
+
+/* media query section  */
+
+@media (max-width: 768px) {
+  .card-section-inner-1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+    column-gap: 10px;
+  }
+  .banner-img-1{
+    display: none;
+  }
+  .banner-img-2{
+    display: none;
+  }
+  .innerBody-items{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
 
 
 }

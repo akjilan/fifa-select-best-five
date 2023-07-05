@@ -17,6 +17,7 @@ const titleAdder = (titleName, selectButtonId) => {
     myPlayers.appendChild(newItem);
     //disable the selected button
     const buttonId = document.getElementById(selectButtonId);
+    buttonId.innerText = 'Player selected';
     buttonId.disabled = true;
   } else {
     alert("You have reached your players limit.");

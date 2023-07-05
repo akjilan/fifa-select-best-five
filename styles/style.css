@@ -93,14 +93,16 @@ body {
 .card-innerBody {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   padding: 5px 10px;
 }
 .innerBody-items {
   display: flex;
   justify-content: space-around;
   color: white;
+  padding: 0 10px;
 }
+
 
 /* player list section  */
 #playerList {
